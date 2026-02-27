@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anel Solitário Elizabeth</title>
+
+<style>
+body{
+font-family:Arial;
+margin:0;
+}
+
+.container{
+display:flex;
+flex-wrap:wrap;
+padding:40px;
+gap:40px;
+}
+
+.galeria img{
+width:100%;
+border-radius:10px;
+cursor:pointer;
+}
+
+.miniaturas{
+display:flex;
+gap:10px;
+margin-top:10px;
+}
+
+.miniaturas img{
+width:70px;
+cursor:pointer;
+border-radius:5px;
+}
+
+.info{
+max-width:400px;
+}
+
+.preco{
+font-size:32px;
+font-weight:bold;
+margin:15px 0;
+}
+
+.botao{
+background:black;
+color:white;
+padding:15px;
+display:block;
+text-align:center;
+text-decoration:none;
+border-radius:6px;
+}
+</style>
+
+<script>
+function trocar(img){
+document.getElementById("principal").src = img;
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="galeria">
+<img id="principal"
+src="https://images.unsplash.com/photo-1605100804763-247f67b3557e">
+
+<div class="miniaturas">
+<img onclick="trocar(this.src)"
+src="https://images.unsplash.com/photo-1605100804763-247f67b3557e">
+
+<img onclick="trocar(this.src)"
+src="https://images.unsplash.com/photo-1588449668365-d15e397f6787">
+
+<img onclick="trocar(this.src)"
+src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338">
+</div>
+</div>
+
+<div class="info">
+
+<h1>Anel Solitário Elizabeth Golden</h1>
+
+<div class="preco">R$ 129,90</div>
+
+<p>ou 12x de R$ 12,90 sem juros</p>
+
+<a class="botao">Adicionar ao Carrinho</a>
+
+<p>
+Material: Prata 925<br>
+Pedra: Zircônia Premium<br>
+Garantia: 12 meses
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
