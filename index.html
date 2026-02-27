@@ -1,93 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luxury Pratas</title>
+<title>Jóia Suzano</title>
 
 <style>
 body{
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#0f0f0f;
-color:white;
+    margin:0;
+    font-family: Arial;
+    background:#f5f5f5;
 }
 
 header{
-text-align:center;
-padding:20px;
-background:black;
-border-bottom:2px solid gold;
-}
-
-header h1{
-color:gold;
-margin:0;
+    background:black;
+    color:gold;
+    text-align:center;
+    padding:20px;
+    font-size:28px;
+    font-weight:bold;
 }
 
 .banner{
-text-align:center;
-padding:60px 20px;
-background:linear-gradient(black,#1c1c1c);
-}
-
-.banner h2{
-font-size:28px;
+    background:url("https://images.unsplash.com/photo-1515562141207-7a88fb7ce338");
+    background-size:cover;
+    background-position:center;
+    height:300px;
 }
 
 .produtos{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-padding:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:20px;
 }
 
 .card{
-background:#1a1a1a;
-border-radius:12px;
-padding:15px;
-text-align:center;
-box-shadow:0 0 15px rgba(255,215,0,0.2);
+    background:white;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    text-align:center;
+    padding:15px;
 }
 
 .card img{
-width:100%;
-border-radius:10px;
+    width:100%;
+    border-radius:10px;
 }
 
 .preco{
-color:gold;
-font-size:20px;
-font-weight:bold;
+    color:green;
+    font-size:20px;
+    font-weight:bold;
 }
 
 .botao{
-background:gold;
-border:none;
-padding:10px 20px;
-border-radius:6px;
-cursor:pointer;
-font-weight:bold;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 0 10px rgba(0,0,0,0.4);
+    background:gold;
+    color:black;
+    padding:10px;
+    display:inline-block;
+    margin-top:10px;
+    text-decoration:none;
+    border-radius:5px;
 }
 
 footer{
-text-align:center;
-padding:20px;
-background:black;
-margin-top:20px;
+    background:black;
+    color:white;
+    text-align:center;
+    padding:15px;
 }
 </style>
 </head>
@@ -95,48 +76,38 @@ margin-top:20px;
 <body>
 
 <header>
-<h1>Luxury Pratas</h1>
-<p>Brincos • Anéis • Joias em Prata 925</p>
+💎 Jóia Suzano
 </header>
 
-<section class="banner">
-<h2>Elegância em cada detalhe ✨</h2>
-<p>Peças selecionadas para realçar sua beleza.</p>
-</section>
+<div class="banner"></div>
 
 <section class="produtos">
 
 <div class="card">
-<img src="https://via.placeholder.com/300">
+<img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1">
+<h3>Anel Solitário</h3>
+<p class="preco">R$ 129,90</p>
+<a class="botao" href="https://wa.me/5511999999999">Comprar</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0">
 <h3>Brinco Prata 925</h3>
-<p class="preco">R$ 49,90</p>
-<button class="botao">Comprar</button>
+<p class="preco">R$ 79,90</p>
+<a class="botao" href="https://wa.me/5511999999999">Comprar</a>
 </div>
 
 <div class="card">
-<img src="https://via.placeholder.com/300">
-<h3>Anel Prata Feminino</h3>
-<p class="preco">R$ 69,90</p>
-<button class="botao">Comprar</button>
-</div>
-
-<div class="card">
-<img src="https://via.placeholder.com/300">
-<h3>Argola Premium</h3>
-<p class="preco">R$ 59,90</p>
-<button class="botao">Comprar</button>
+<img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f">
+<h3>Corrente de Prata</h3>
+<p class="preco">R$ 149,90</p>
+<a class="botao" href="https://wa.me/5511999999999">Comprar</a>
 </div>
 
 </section>
 
-<a class="whatsapp" 
-href="https://wa.me/5511958334328" 
-target="_blank">
-WhatsApp
-</a>
-
 <footer>
-<p>© 2026 Luxury Pratas</p>
+© 2026 Jóia Suzano - Todos os direitos reservados
 </footer>
 
 </body>
