@@ -7,108 +7,112 @@
 
 <style>
 body{
-    margin:0;
-    font-family: Arial;
-    background:#f5f5f5;
+margin:0;
+font-family:Arial;
+background:#f5f5f5;
 }
 
 header{
-    background:black;
-    color:gold;
-    text-align:center;
-    padding:20px;
-    font-size:28px;
-    font-weight:bold;
-}
-
-.banner{
-    background:url("https://images.unsplash.com/photo-1515562141207-7a88fb7ce338");
-    background-size:cover;
-    background-position:center;
-    height:300px;
+background:black;
+color:gold;
+padding:20px;
+text-align:center;
+font-size:26px;
+font-weight:bold;
 }
 
 .produtos{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-    padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:20px;
 }
 
 .card{
-    background:white;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
-    text-align:center;
-    padding:15px;
+background:white;
+border-radius:10px;
+padding:15px;
+text-align:center;
+box-shadow:0 0 10px rgba(0,0,0,.1);
 }
 
 .card img{
-    width:100%;
-    border-radius:10px;
+width:100%;
+border-radius:10px;
 }
 
 .preco{
-    color:green;
-    font-size:20px;
-    font-weight:bold;
+color:green;
+font-size:20px;
+font-weight:bold;
 }
 
 .botao{
-    background:gold;
-    color:black;
-    padding:10px;
-    display:inline-block;
-    margin-top:10px;
-    text-decoration:none;
-    border-radius:5px;
+background:black;
+color:white;
+padding:12px;
+display:block;
+margin-top:10px;
+text-decoration:none;
+border-radius:6px;
 }
 
-footer{
-    background:black;
-    color:white;
-    text-align:center;
-    padding:15px;
+/* BOTÃO WHATSAPP FLUTUANTE */
+.whatsapp-fixo{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 0 10px rgba(0,0,0,.3);
+z-index:999;
+}
+
+.whatsapp-fixo img{
+width:35px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-💎 Jóia Suzano
-</header>
-
-<div class="banner"></div>
+<header>💎 Jóia Suzano</header>
 
 <section class="produtos">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1">
-<h3>Anel Solitário</h3>
+<img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e">
+<h3>Anel Solitário Elizabeth</h3>
 <p class="preco">R$ 129,90</p>
-<a class="botao" href="https://wa.me/5511999999999">Comprar</a>
+
+<a class="botao" href="produto.html">
+Comprar
+</a>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0">
 <h3>Brinco Prata 925</h3>
 <p class="preco">R$ 79,90</p>
-<a class="botao" href="https://wa.me/5511999999999">Comprar</a>
-</div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f">
-<h3>Corrente de Prata</h3>
-<p class="preco">R$ 149,90</p>
-<a class="botao" href="https://wa.me/5511999999999">Comprar</a>
+<a class="botao" href="produto.html">
+Comprar
+</a>
 </div>
 
 </section>
 
-<footer>
-© 2026 Jóia Suzano - Todos os direitos reservados
-</footer>
+<!-- WHATSAPP FLUTUANTE -->
+<a class="whatsapp-fixo"
+href="https://wa.me/5511999999999"
+target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
 
 </body>
 </html>
